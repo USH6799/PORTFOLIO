@@ -1,0 +1,271 @@
+/* Default color scheme */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-color: #f0f0f0; /* Default background color */
+    color: #333; /* Default text color */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes up full height */
+    /* overflow: hidden; */
+}
+
+.upper {
+    background-color: #0afc3e; /* Upper section background color */
+    color: #000000; /* Text color */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.upper img {
+    height: 45px;
+    margin-right: auto; /* Move logo to left corner */
+    margin-left: 30px; /* Add some space */
+}
+
+.upper h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+    position: absolute;
+    left: 50%;
+    color:#000000;
+    transform: translateX( -50% );
+}
+
+.upper button {
+    /* position: absolute; */
+    /* top: 50%; */
+    /* right: 20px; */
+    /* transform: translateY(-50%); */
+    background-color: transparent;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.upper a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    font-family: montserrat;
+}
+
+.upper button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.content {
+    padding: 20px;
+    flex: 1;
+}
+
+.type {
+    background-color: #fff; /* Type background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.word {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.word h2 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.code {
+    display: none;
+    padding: 0 20px 20px;
+}
+
+.code a {
+    display: inline-block;
+    margin: 5px 10px 0 0;
+    padding: 8px 15px;
+    background-color: #161616; /* Code link background color */
+    color: #fff; /* Text color */
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px gray;
+    /* font-size: 1.3em; */
+}
+
+.code a:hover{
+    opacity: 0.8;
+    /* border: 1px solid gray; */
+}
+
+.note {
+    background-color: #079cff; /* Yellow background color */
+    color: #333; /* Text color */
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: all 0.3s ease, box-shadow 0.3s ease;
+    animation: slideIn 0.3s ease 0s 1;
+}
+
+.note:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Animation for initial appearance */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.note {
+    animation: slideIn 0.5s ease forwards; /* Apply animation */
+}
+
+.note>a{
+    font-size: 20px;
+    color: rgb(31, 31, 31);
+    border: none;
+    text-decoration: none;
+}
+
+.note:hover{
+    color: rgb(238, 238, 238);
+    background-color: #353535;
+}
+
+.note:hover a{
+    color: rgb(238, 238, 238);
+    background-color: transparent;
+}
+
+footer {
+    background-color: #333; /* Footer background color */
+    color: #fff; /* Text color */
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Move footer to bottom */
+}
+
+/* Media queries for different color patterns */
+@media screen and (max-width: 768px) {
+    /* Adjust color scheme for screens below 768px width */
+    body {
+        background-color: #0c0c0c; /* Dark background color */
+        color: #363636; /* Light text color */
+    }
+
+    .upper h1 {
+        display: none; /* Hide h1 tag */
+    }
+
+    .upper img {
+        margin-left: 20px; /* Add some space */
+    }
+
+    .upper button {
+        right: 20px; /* Move homepage button to right corner */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Adjust color scheme for screens below 480px width */
+    body {
+        background-color: #111; /* Darkest background color */
+        color: #353535; /* Lighter text color */
+    }
+
+    .upper h1 {
+        display: none; /* Hide h1 tag */
+    }
+
+    .upper img {
+        margin-left: 10px; /* Add some space */
+    }
+
+    .upper button {
+        right: 10px; /* Move homepage button to right corner */
+        color: black;
+    }
+}
+
+.note {
+    background-color: #181818; /* Yellow background color */
+    color: #333; /* Text color */
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: all 0.3s ease, box-shadow 0.3s ease;
+    animation: slideIn 0.3s ease 0s 1;
+}
+
+.note:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Animation for initial appearance */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.note {
+    animation: slideIn 0.5s ease forwards; /* Apply animation */
+}
+
+.note>a{
+    font-size: 20px;
+    color: rgb(31, 31, 31);
+    border: none;
+    text-decoration: none;
+}
+
+.note:hover{
+    color: rgb(238, 238, 238);
+    background-color: #353535;
+}
+
+.note:hover a{
+    color: rgb(238, 238, 238);
+    background-color: transparent;
+}
+

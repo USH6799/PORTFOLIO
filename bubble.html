@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Game</title>
+    <link rel="stylesheet" href="assets/css/style_bubble.css">
+</head>
+<body>
+    <main>
+        <div class="game-area">
+            <div class="screen">
+                <button id="btn">Start</button>
+                <button id="chtime">Change Timer</button>
+            </div>
+
+            <div class="changetime">
+                <div class="a">
+                    <button id="btn">15</button>
+                    <button id="btn">30</button>
+                    <button id="btn">60</button>
+                    <button id="btn">90</button>
+                </div>
+                <button id="return">Back</button>
+            </div>
+
+            <div class="result">
+                <h2>Final Score <div class="box" id="box1"></div> </h2>
+                <h2>Total Hits <div class="box" id="box2"></div></h2>
+
+                <a href="bubble.html"><button>PLAY AGAIN</button></a>
+            </div>
+            <div class="panel">
+                <div class="elem">
+                    <h3>Score</h3>
+                    <div class="box" id="score">0</div>
+                </div>
+                <div class="elem">
+                    <h3>Hit</h3>
+                    <div class="box" id = "hit"></div>
+                    <div class="box" id = "newhit">Refresh</div>
+                </div>
+                <div class="elem">
+                    <h3>Time</h3>
+                    <div class="box" id = "timer">60</div>
+                </div>
+
+                
+            </div>
+            <div class="btm">
+                <!-- <div class="col"></div> -->
+            </div>
+        </div>
+        <script src="assets/js/script_bubble.js"></script>
+    </main>
+</body>
+</html>
