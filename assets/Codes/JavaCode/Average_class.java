@@ -1,6 +1,3 @@
-package Arrays;
-// packageName Arrays.
-
 import java.util.Scanner;
 // imported scanner class for taking input from user.
 

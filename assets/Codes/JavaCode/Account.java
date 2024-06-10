@@ -39,23 +39,23 @@ public class Account {
     }// Custom fnc 'calcInterest(amt,rate)' ends here.
 
 
-    void UpdateBalance(double p , double r){
+    void UpdateBalance(Account ac1 , double r){
         // A custom Created fnc 'UpdateBalance(p,r)' taking 2 parameters 'p' and 'r' of datatype double, returning void(nothing) to the Caller.
 
-        double SI = calcInterest(p , r);
+        double SI = calcInterest(ac1.balance , r);
         // Calling the fnc 'calcInterest(amt,rate) by passing 2 arguments 'p' & 'r' .
 
         // Storing the Returned value of the fnc to the variable 'SI'(Caller of the fnc) of datatype double.
 
         // Inside the fnc: 'p' -> 'amt' & 'r' -> 'rate'.
 
-        System.out.println("The Initial Balance was: " + p);
+        System.out.println("The Initial Balance was: " + ac1);
         // Printing the intital balance of the Account before adding interest to it.
 
-        double amt = p + SI;
+        double amt = ac1.balance + SI;
         // Adding interest 'SI' to the Principle balance 'p' and Storing the Final Amount in var 'amt' of datatype Double.
 
-        System.out.println("The Interest Earned on Rs." + p + " at the rate of " + r + "% is: " + SI);
+        System.out.println("The Interest Earned on Rs." + ac1 + " at the rate of " + r + "% is: " + SI);
         // Printing the interest earned by the account on 'p' at the rate of 'r'.
 
         System.out.println("The Updated Balance was: " + amt);
@@ -87,7 +87,7 @@ public class Account {
         
         // Passing 2 arguments in the fnc '1203' & '34000' which are later inside the fnc becomes the value of var 'a' and 'b' respectively.
         
-        ac1.UpdateBalance(34000, 7.5);
+        ac1.UpdateBalance(ac1 , 7.5);
         // Accessing the Custom fnc 'UpdateBalance(p,r)' of the custom class 'Account' using the object 'ac1'.
         
         // Passing 2 arguments in the fnc '34000' & '7.5' which are later inside the fnc becomes the value of var 'p' and 'r' respectively.

@@ -15,7 +15,7 @@ public class Account_Constructor {
 
     // Integer Datatype because it doesn't contain any floating/decimal values.
 
-    void Account_Constructor(p , n){ // here as you see this is the constructor of class Account_Construcor, it has same name as the class and hence it is known as constructor fnc which can be directly called during object creation.
+    Account_Constructor(double p , int n){ // here as you see this is the constructor of class Account_Construcor, it has same name as the class and hence it is known as constructor fnc which can be directly called during object creation.
 
         // Taking 2 parameters 'p' and 'n'
 
@@ -37,23 +37,23 @@ public class Account_Constructor {
     }// Custom fnc 'calcInterest(amt,rate)' ends here.
 
 
-    void UpdateBalance(Account p , double r){
+    void UpdateBalance(Account_Constructor ac1 , double r){
         // A custom Created fnc 'UpdateBalance(p,r)' taking 2 parameters 'p' and 'r' of datatype Account or class and double, returning void(nothing) to the Caller.
 
-        double SI = calcInterest(p.balance , r);
+        double SI = calcInterest(ac1.balance , r);
         // Calling the fnc 'calcInterest(amt,rate) by passing 2 arguments value of balance in obj 'p' & 'r' .
 
         // Storing the Returned value of the fnc to the variable 'SI'(Caller of the fnc) of datatype double.
 
         // Inside the fnc: 'p' -> 'amt' & 'r' -> 'rate'.
 
-        System.out.println("The Initial Balance was: " + p.balance);
+        System.out.println("The Initial Balance was: " + ac1.balance);
         // Printing the intital balance of the Account before adding interest to it.
 
-        double amt = p.balance + SI;
+        double amt = ac1.balance + SI;
         // Adding interest 'SI' to the Principal balance 'p' and Storing the Final Amount in var 'amt' of datatype Double.
 
-        System.out.println("The Interest Earned on Rs." + p.balance + " at the rate of " + r + "% is: " + SI);
+        System.out.println("The Interest Earned on Rs." + ac1.balance + " at the rate of " + r + "% is: " + SI);
         // Printing the interest earned by the account on 'p' at the rate of 'r'.
 
         System.out.println("The Updated Balance was: " + amt);
@@ -75,7 +75,7 @@ public class Account_Constructor {
     public static void main(String[] args) {
         // main fnc to run the code.
 
-        Account ac1 = new Account(1200 , 34000);
+        Account_Constructor ac1 = new Account_Constructor(1200 , 34000);
         // Creating an object 'ac1' of Class Account to access the class methods and variables.
 
         // Also calling the constructor by passing 2 arguments.

@@ -39,7 +39,7 @@ public class Account_Updated {
     }// Custom fnc 'calcInterest(amt,rate)' ends here.
 
 
-    void UpdateBalance(Account p , double r){
+    void UpdateBalance(Account_Updated p , double r){
         // A custom Created fnc 'UpdateBalance(p,r)' taking 2 parameters 'p' and 'r' of datatype Account or class and double, returning void(nothing) to the Caller.
 
         double SI = calcInterest(p.balance , r);

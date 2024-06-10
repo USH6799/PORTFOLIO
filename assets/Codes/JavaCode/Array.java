@@ -1,6 +1,3 @@
-package Arrays;
-// package name Arrays.
-
 import java.util.Scanner;
 // imported scanner class for taking input from user.
 public class Array {
@@ -117,6 +114,12 @@ public class Array {
 
         int initialized_arr[] = {1 , 3 , 5 , 6 , 10};
         // this is an example of both declaration and intialization.
+
+        // Lets apply a loop on it also,
+
+        for(int item: initialized_arr){
+            System.out.println(item);
+        }
 
         sc.close();
         // closing the obj of Scanner class so no further input could be taken; Not Necessary.

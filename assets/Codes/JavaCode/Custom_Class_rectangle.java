@@ -1,3 +1,5 @@
+
+
 class Rectangle{
     // custom created class(doesn't have main fnc) , classname Rectangle
 
