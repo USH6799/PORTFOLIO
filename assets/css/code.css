@@ -315,9 +315,11 @@
         padding: 20px;
         perspective: 1000px;
         position: relative;
-    }
-    
-    .card {
+        /* backdrop-filter: blur(20px); */
+        background-color: #0000001e;
+      }
+      
+      .card {
         padding-top: 50px;
         /* border-radius: 10px; */
         border: 3px solid rgb(255, 255, 255);
@@ -355,7 +357,7 @@
     }
     
     .content-box .card-title:hover {
-        transform: translate3d(0px, 0px, 60px);
+        transform: translate3d(0px, 0px, 80px);
     }
     
     .content-box .card-content {
@@ -390,7 +392,7 @@
     
     .content-box .see-more:hover {
         transform: translate3d(0px, 0px, 60px);
-        color: rgb(48, 48, 48);
+        color: rgb(19, 19, 19);
     }
     
     .date-box {
@@ -405,11 +407,16 @@
         padding: 10px;
         transform: translate3d(0px, 0px, 80px);
         box-shadow: rgba(100, 100, 111, 0.2) 0px 17px 10px -10px;
+        transition: transform 0.5s ease-in 0s;
     }
     
     .date-box span {
         display: block;
         text-align: center;
+    }
+
+    .date-box:hover{
+      transform: translate3d(0px, 0px , 100px);
     }
     
     .date-box .month {
