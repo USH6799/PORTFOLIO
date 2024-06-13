@@ -428,31 +428,31 @@ render();
 
 function files(index) {
 var data = `
-/assets/img/Vision00001.png
-/assets/img/Vision00002.png
-/assets/img/Vision00003.png
-/assets/img/Vision00004.png
-/assets/img/Vision00005.png
-/assets/img/Vision00006.png
-/assets/img/Vision00007.png
-/assets/img/Vision00008.png
-/assets/img/Vision00009.png
-/assets/img/Vision00010.png
-/assets/img/Vision00011.png
-/assets/img/Vision00012.png
-/assets/img/Vision00013.png
-/assets/img/Vision00014.png
-/assets/img/Vision00015.png
-/assets/img/Vision00016.png
-/assets/img/Vision00017.png
-/assets/img/Vision00018.png
-/assets/img/Vision00019.png
-/assets/img/Vision00020.png
-/assets/img/Vision00021.png
-/assets/img/Vision00022.png
-/assets/img/Vision00023.png
-/assets/img/Vision00024.png
-/assets/img/Vision00025.png
+/assets/img/Vision00001.webp
+/assets/img/Vision00002.webp
+/assets/img/Vision00003.webp
+/assets/img/Vision00004.webp
+/assets/img/Vision00005.webp
+/assets/img/Vision00006.webp
+/assets/img/Vision00007.webp
+/assets/img/Vision00008.webp
+/assets/img/Vision00009.webp
+/assets/img/Vision00010.webp
+/assets/img/Vision00011.webp
+/assets/img/Vision00012.webp
+/assets/img/Vision00013.webp
+/assets/img/Vision00014.webp
+/assets/img/Vision00015.webp
+/assets/img/Vision00016.webp
+/assets/img/Vision00017.webp
+/assets/img/Vision00018.webp
+/assets/img/Vision00019.webp
+/assets/img/Vision00020.webp
+/assets/img/Vision00021.webp
+/assets/img/Vision00022.webp
+/assets/img/Vision00023.webp
+/assets/img/Vision00024.webp
+/assets/img/Vision00025.webp
 `;
 return data.split("\n")[index];
 }
