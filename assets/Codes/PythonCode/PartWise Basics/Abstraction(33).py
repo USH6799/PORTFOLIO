@@ -4,7 +4,7 @@
 
  # In one sentence , there is no abstraction in python , because it is easily accessible and unsecure because during the creation of python language it is not prepared to face abstractions..
  
- # but through a module u can use do abstraction in Python...
+ # but through a module u can do abstraction in Python...
  
 from abc import ABC, abstractmethod
 from contextlib import AbstractAsyncContextManager
@@ -31,4 +31,10 @@ class Normal2(AbstractClass):# A class 'Normal2' inherited the abstracted class 
         
         super().AbstractMethod() # Calling the method of super or inherited class using super() fnc.
         
-Normal2() # it wont show any error and prints hello! guys
+obj1 = Normal2() # Creating a object 'obj1' of class Normal2.
+
+obj1.AbstractMethod() # Calling the abstract method of class Normal2 using object 'obj1'.
+
+# which later calls the abstract method of super class.
+
+# OUTPUT:- hello! Guys

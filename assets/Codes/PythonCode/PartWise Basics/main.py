@@ -288,8 +288,8 @@ print(Stringvar + Concatenatevar) # This will concatenate the string value of va
 
 # Concatenation works only in string values where using + operator it attaches both values as a single unit.
 
-# Ex:- In integer, 1 + 1 = 2
-# Ex:- In string, "1" + "1" = "11"
+# Ex:- In integer, 1 + 1 = 2, like math toppers says 1 + 1 is 2.
+# Ex:- In string, "1" + "1" = "11", like Legends says 1 + 1 is 11.
 
 # ----------------------------------------------------------
 # There are mainly three types of data groups,
@@ -305,7 +305,9 @@ x = 10 / 5 # Storing the division of 10 and 5 which in reality returns 2 which i
 
 print(type(x)) # A function 'type(x)' used to check the datatype of variable 'x' and printing it on the terminal window as the output.
 
-#       - Complex (very less used, it can use imaginary numbers or values (iota 'i')).
+#       - Complex (very less used, it can use imaginary numbers or values (iota 'i' or 'j')).
+
+print(type(12j))
 
 
 # ----------------------------------------------------------
@@ -316,6 +318,12 @@ print(type(x)) # A function 'type(x)' used to check the datatype of variable 'x'
     # True (Means the condition is true, yes, right, working, correct), anything which is true.
     
     # False (Means the condition is false, no, wrong, not working, incorrect), anything which is false.
+    
+print(type(True)) # this will returns that true is of boolean datatype.
+
+print(type(10 < 5)) # here if you think that the type will be integer, you are wrong here also the datatype will be booleann, because inside any conditonal statement, we can pass any condition which laters converts into true or flase.
+
+# like here 10 < 5, all we know that this is wrong or false and returns false to the function and the datatype of false is boolean.
     
     
 # ----------------------------------------------------------
@@ -393,6 +401,15 @@ print(bool(str1)) # You know the output will be True but the question arises, ho
 
 str2 = "" # A string variable 'str2' storing nothing inside the double quotes.
 print(bool(str2)) # You know the output will be False but the question arises, how? How does an empty string value become false?
+
+
+# here the concept of truthy and falsy comes, I cannot deeply explain them but just remember if you write anything inside condition in python, it will either convert into true or false.
+
+# The falsy values are:- null , 0 , "" , () , {} , [] , false , and some more.
+
+# the Truthy values are the rest except the falsy values.
+
+# You need to just remember and memorize the falsy values.
 
 print() 
 print("Input Begins:- ")
