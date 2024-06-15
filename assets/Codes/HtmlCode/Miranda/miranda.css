@@ -1,0 +1,39 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+html,body{
+height: 100%;
+width: 100%;
+}
+
+
+main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.page1{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #C4BCB3;
+    position: relative;
+}
+
+nav{
+    height: 9vh;
+    width: 100%;
+    background-color: crimson;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 4vw;
+}
+
+nav h2{
+    font-size: 1.4vw;
+}
+
