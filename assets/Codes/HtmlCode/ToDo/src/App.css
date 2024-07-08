@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+.priority-box {
+    cursor: grab;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+
+.high {
+	background-color: #fc2e2e; /* Light Red for High Priority */
+}
+
+.medium {
+	background-color: #f37b19; /* Light Yellow for Medium Priority */
+}
+
+.low {
+	background-color: #48b416; /* Light Green for Low Priority */
+}
+
+.priority-box:hover {
+    transform: scale(1.1);
+  }
+  
+  .task {
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    animation: fadeIn 0.5s, bounce 0.3s;
+  }
+  
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  @keyframes slideOut {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .task.removing {
+    animation: slideOut 0.5s forwards;
+  }
+  
+  .task.adding {
+    animation: slideIn 0.5s forwards;
+  }

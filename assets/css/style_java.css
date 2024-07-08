@@ -125,11 +125,6 @@ body {
     animation: slideIn 0.3s ease 0s 1;
 }
 
-.note:hover {
-    transform: scale(1.05); /* Scale up on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
-}
-
 /* Animation for initial appearance */
 @keyframes slideIn {
     from {
@@ -156,6 +151,8 @@ body {
 .note:hover{
     color: rgb(238, 238, 238);
     background-color: #353535;
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
 }
 
 .note:hover a{

@@ -31,6 +31,55 @@ body {
     font-size: 0.6em;
 }
 
+.note {
+    background-color: #25eedd; /* Yellow background color */
+    color: #333; /* Text color */
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: all 0.3s ease, box-shadow 0.3s ease;
+    animation: slideIn 0.3s ease 0s 1;
+}
+
+/* Animation for initial appearance */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.note {
+    animation: slideIn 0.5s ease forwards; /* Apply animation */
+}
+
+.note>a{
+    font-size: 20px;
+    color: rgb(31, 31, 31);
+    border: none;
+    text-decoration: none;
+}
+
+.note:hover{
+    color: rgb(238, 238, 238);
+    background-color: #353535;
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.note:hover a{
+    color: rgb(238, 238, 238);
+    background-color: transparent;
+}
+
+
 .upper img {
     height: 40px;
     margin-left: 20px; /* Move the logo to the left corner */
