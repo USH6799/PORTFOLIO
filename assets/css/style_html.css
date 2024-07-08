@@ -135,7 +135,7 @@ h1 {
 .code {
     display: none; /* Initially hidden */
     padding: 0 20px 20px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .code a {
@@ -188,7 +188,7 @@ footer {
     .type .code {
         padding: 10px; /* Add padding */
         display: none; /* Use flexbox to align items */
-        justify-content: space-between; /* Separate content equally */
+        justify-content: space-around; /* Separate content equally */
         margin: 10px; /* Add margin from the border */
     }
 
