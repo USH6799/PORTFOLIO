@@ -1,6 +1,27 @@
 (function ($) {
 	"use strict";
 
+	document.addEventListener("DOMContentLoaded", function() {
+        const priceItems = document.querySelectorAll('.price-item');
+
+        priceItems.forEach(item => {
+            item.addEventListener('click', function() {
+                removeFeaturedClass();
+                this.classList.add('featured-item');
+            });
+
+            item.addEventListener('mouseover', function() {
+                removeFeaturedClass();
+                this.classList.add('featured-item');
+            });
+        });
+
+        function removeFeaturedClass() {
+            priceItems.forEach(item => {
+                item.classList.remove('featured-item');
+            });
+        }
+    });
     
 
 	const colorInput = document.getElementById("theme");

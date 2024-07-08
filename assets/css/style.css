@@ -1593,6 +1593,17 @@ p{
     color: #414141;
 }
 
+.price-item {
+    transition: all 0.3s ease-in-out;
+}
+
+
+.featured-item {
+    /* Example changes for the featured item */
+    transform: scale(1.05);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 @media (max-width: 575.98px) {
 
     :root{
