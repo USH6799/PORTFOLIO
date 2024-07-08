@@ -1595,7 +1595,9 @@ p{
 
 @media (max-width: 575.98px) {
 
-
+    :root{
+        --accent: #f02c1e;
+    }
 
     .footer .footer-info h2 {
         margin-bottom: 20px;
