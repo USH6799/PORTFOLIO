@@ -9891,7 +9891,7 @@ function ap() {
 							}),
 							R.jsx("button", {
 								className:
-									"text-md font-bold sm:p-2 px-10 py-1 bg-slate-600 rounded-2xl ml-10 hover:bg-slate-700 hover:scale-110 hover:uppercase ease-in-out duration-300 disabled:scale-100",
+									"text-md font-bold sm:p-2 px-10 py-1 bg-slate-600 rounded-2xl hover:bg-slate-700 hover:scale-110 ease-in-out duration-300 disabled:scale-100 lg:ml-10",
 								onClick: s,
 								disabled: e.length < 1,
 								children: R.jsx(op, { className: "text-2xl" }),
@@ -9900,7 +9900,7 @@ function ap() {
 					}),
 					R.jsxs("div", {
 						className:
-							"priority-boxes flex gap-4 lg:flex md:hidden sm:hidden hidden",
+							"priority-boxes flex gap-4 lg:flex",
 						children: [
 							R.jsx("div", {
 								className:
