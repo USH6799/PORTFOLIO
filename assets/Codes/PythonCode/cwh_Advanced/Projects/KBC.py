@@ -75,11 +75,11 @@ while True:
     
         if(len(Easy) == 0):
             print("----------------------------------------------------")
-            print(name, " won in Easy Level: ")
+            print(name, " won in Easy Level!!!")
             print("----------------------------------------------------")
-            print(name, " won in Easy Level: ")
+            print(name, " won in Easy Level!!!!")
             print("----------------------------------------------------")
-            print(name, " won in Easy Level: ")
+            print(name, " won in Easy Level!!!!! ")
             print("----------------------------------------------------")
             
             Result(reward)

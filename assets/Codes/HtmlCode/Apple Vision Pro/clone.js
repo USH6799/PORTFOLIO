@@ -428,31 +428,31 @@ render();
 
 function files(index) {
 var data = `
-/assets/img/Vision00001.webp
-/assets/img/Vision00002.webp
-/assets/img/Vision00003.webp
-/assets/img/Vision00004.webp
-/assets/img/Vision00005.webp
-/assets/img/Vision00006.webp
-/assets/img/Vision00007.webp
-/assets/img/Vision00008.webp
-/assets/img/Vision00009.webp
-/assets/img/Vision00010.webp
-/assets/img/Vision00011.webp
-/assets/img/Vision00012.webp
-/assets/img/Vision00013.webp
-/assets/img/Vision00014.webp
-/assets/img/Vision00015.webp
-/assets/img/Vision00016.webp
-/assets/img/Vision00017.webp
-/assets/img/Vision00018.webp
-/assets/img/Vision00019.webp
-/assets/img/Vision00020.webp
-/assets/img/Vision00021.webp
-/assets/img/Vision00022.webp
-/assets/img/Vision00023.webp
-/assets/img/Vision00024.webp
-/assets/img/Vision00025.webp
+/assets/img/Apple Vision Pro/Vision00001.webp
+/assets/img/Apple Vision Pro/Vision00002.webp
+/assets/img/Apple Vision Pro/Vision00003.webp
+/assets/img/Apple Vision Pro/Vision00004.webp
+/assets/img/Apple Vision Pro/Vision00005.webp
+/assets/img/Apple Vision Pro/Vision00006.webp
+/assets/img/Apple Vision Pro/Vision00007.webp
+/assets/img/Apple Vision Pro/Vision00008.webp
+/assets/img/Apple Vision Pro/Vision00009.webp
+/assets/img/Apple Vision Pro/Vision00010.webp
+/assets/img/Apple Vision Pro/Vision00011.webp
+/assets/img/Apple Vision Pro/Vision00012.webp
+/assets/img/Apple Vision Pro/Vision00013.webp
+/assets/img/Apple Vision Pro/Vision00014.webp
+/assets/img/Apple Vision Pro/Vision00015.webp
+/assets/img/Apple Vision Pro/Vision00016.webp
+/assets/img/Apple Vision Pro/Vision00017.webp
+/assets/img/Apple Vision Pro/Vision00018.webp
+/assets/img/Apple Vision Pro/Vision00019.webp
+/assets/img/Apple Vision Pro/Vision00020.webp
+/assets/img/Apple Vision Pro/Vision00021.webp
+/assets/img/Apple Vision Pro/Vision00022.webp
+/assets/img/Apple Vision Pro/Vision00023.webp
+/assets/img/Apple Vision Pro/Vision00024.webp
+/assets/img/Apple Vision Pro/Vision00025.webp
 `;
 return data.split("\n")[index];
 }

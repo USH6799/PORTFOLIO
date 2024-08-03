@@ -10,7 +10,7 @@ t = float(t)
 def call():
     eng.say("Time For Drinking Water")  
     eng.runAndWait()
-    if(ans:=input("Enter ok to Stop the Reminder: ") == "ok"):
+    if(input("Enter ok to Stop the Reminder: ") == "ok"):
         eng.stop()
         
     else:

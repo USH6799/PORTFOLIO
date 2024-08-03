@@ -6,8 +6,13 @@ def factorial(n):
     else:
         return n * factorial(n-1)
 
-print(factorial(5))
-print(factorial(4))
-print(factorial(3))
-print(factorial(6))
+while True:
     
+    try:
+        num = int(input("Enter the Number to find its factorial: "))
+        res = factorial(num)
+        
+        print("\nThe Factorial of " , num , "is: " , res)
+    
+    except: 
+        print("\nWrong Input given, Please Enter a Number\n---------------------------------------------\n\n")

@@ -147,11 +147,17 @@
 # 1. Difference between Compiler and Interpreter
 # ----------------------------------------------------------
 
-# Compiler -> Takes a set of code at once, converts it into different forms of code, and gives the final code as binary code which is later executed by the computer. Example - Java.
+# Compiler -> Takes a set of code at once, converts it into different forms of code, and gives the final code as binary code which is later executed by the computer. Example - Java language offers Compiler.
 
-# Interpreter -> Takes a line of code, converts it into binary code, runs it, then moves to the next line of code, and repeats the same process for each line of code. Example - JavaScript.
+# Interpreter -> Takes a line of code, converts it into binary code, runs it, then moves to the next line of code, and repeats the same process for each line of code. Example - JavaScript language offers interpreter.
 
 # Python is an interpreted language. It means it uses an interpreter to execute its code.
+
+# By the Way, One advantage of Compiler over interpreter was finding issues and bugs becomes easier before running the code in Compiler but in Interpreter it is difficult to match errors with lines execution.
+
+# In the Other Way, One advantage of Interpreter over Compiler was that in languages using compilers werebeing easier to find errors in them but changing the before line of code to fix error may change the whole execution of the Rest of the Program or Calculations may change but in Interpreted Languages it stops at the line of Code and Doesn,t let you execute other lines of code and also doesn't tell you about future errors which make it easier to fix errors.
+
+# Both are Better in their Own Way. 
 
 
 # ----------------------------------------------------------
@@ -195,9 +201,9 @@ print()
 
 # Variables are like empty boxes where you can store or change any value inside them.
 
-# In short, a storage box for the values inside the code.
+# In short, a storage box for the values or datas inside the code.
 
-# If you use the '=' symbol after any word or name then it will become the variable.
+# If you use the '=' symbol after any word or name except keyword then it will become the variable.
 
 name = "USH" # Like this, here 'name' is the variable because it has '=' sign after it and stores the string value "USH" inside it.
 
@@ -228,6 +234,10 @@ print(name) # Now printing the variable. Notice that I don't use "" double quote
 # Full name -> Contains spaces, wrong variable.
 
 # Corrected variable: Full_name -> this is the right variable because it contains an underscore (_) instead of spaces.
+
+# import -> It is a keyword, Wrong variable.
+
+# Corrected Variable: Import 
 
 # Why variables? What is the use?
 

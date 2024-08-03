@@ -45,9 +45,15 @@ obj = Library() # creating an object of the class 'Library'
 while True:
     print("\nEnter 1 to add a book\nEnter 2 to show the information of the library\nEnter 3 to remove a book\nEnter any other number to exit") # printing the statement
 
-    choice = int(input()) # taking input from the user
-
-
+    choice = input() # taking input from the user
+    
+    try: 
+        choice = int(choice)
+        
+    except:
+        print("\nWrong Choice, Enter a Desired Number\n\n")
+        continue
+        
     if(choice == 1): 
         obj.AddBook()
     
@@ -59,6 +65,8 @@ while True:
     
     else:
         break
+        
+
         
     
     

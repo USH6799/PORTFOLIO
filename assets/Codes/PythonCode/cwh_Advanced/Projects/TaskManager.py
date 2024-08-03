@@ -77,17 +77,22 @@ while(True):
       addtask(task)
       # calling addtask function to add the input
 
+      print("\n------------------------------------\n")
+  
       continue
       # To Re-run the loop 
 
    # for 2nd option
     elif(choice==2):
-       index=int(input("enter the index no. of the task you want to remove: "))
+        index=int(input("enter the index no. of the task you want to remove: "))
       #  taking the Serial Number Of task To remove it
 
-       removetask(index)
+        removetask(index)
       #  calling removetask function to remove task
-       continue
+
+        print("\n------------------------------------\n")
+
+        continue
       # to Re-run the Loop
     
    #  for 3rd choice
@@ -95,6 +100,8 @@ while(True):
         
         checktask()
       #   calling checktask function to print all tasks
+
+        print("\n------------------------------------\n")
 
         continue
       # to Re-run the loop
