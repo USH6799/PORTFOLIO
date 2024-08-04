@@ -17,6 +17,7 @@ main{
     justify-content: center;
     align-items: center;
     background-color: rgb(183, 255, 183);
+    overflow: hidden;
 }
 
 .game-area{
