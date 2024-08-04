@@ -147,7 +147,7 @@ function App() {
 					</button>
 				</div>
 
-				<div className="priority-boxes flex gap-4 lg:flex md:hidden sm:hidden lg:block">
+				<div className="priority-boxes hidden gap-4 lg:flex md:flex">
 					<div
 						className="priority-box high p-2 rounded-lg cursor-pointer"
 						draggable
