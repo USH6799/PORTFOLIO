@@ -1,3 +1,4 @@
+
 // Importing the Scanner class from the java.util package
 import java.util.Scanner;
 

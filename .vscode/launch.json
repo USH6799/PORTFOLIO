@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "pattern2",
+            "request": "launch",
+            "mainClass": "Patterns.pattern2",
+            "projectName": "PORTFOLIO_ba954ad1"
+        },
+        {
+            "type": "java",
+            "name": "Alphabets",
+            "request": "launch",
+            "mainClass": "Alphabets",
+            "projectName": "PORTFOLIO_ba954ad1"
+        },
+        {
+            "type": "java",
+            "name": "EvilNumber",
+            "request": "launch",
+            "mainClass": "EvilNumber",
+            "projectName": "PORTFOLIO_ba954ad1"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
