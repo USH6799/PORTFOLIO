@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "While_loop",
+            "request": "launch",
+            "mainClass": "Personal.While_loop",
+            "projectName": "PORTFOLIO_ba954ad1"
+        },
+        {
+            "type": "java",
+            "name": "ReverseAdding",
+            "request": "launch",
+            "mainClass": "ReverseAdding",
+            "projectName": "PORTFOLIO_ba954ad1"
+        },
+        {
+            "type": "java",
+            "name": "AdamNumber",
+            "request": "launch",
+            "mainClass": "AdamNumber",
+            "projectName": "PORTFOLIO_ba954ad1"
+        },
+        {
+            "type": "java",
             "name": "pattern2",
             "request": "launch",
             "mainClass": "Patterns.pattern2",

@@ -16,3 +16,5 @@ print(a) # printing the output
 print(Square.__doc__) # this will print the docstring
 
 # OUTPUT:- A fnc Square taking parameter n and retruning n**2 
+
+################################################################

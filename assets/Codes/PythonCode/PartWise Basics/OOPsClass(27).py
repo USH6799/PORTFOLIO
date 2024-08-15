@@ -14,3 +14,6 @@ class CarFactory1: # this is a simple example of class
 print(type(CarFactory1)) # prints the type of var 'CarFactory'.
 
 # Output: <class 'type'>
+
+
+########################################################

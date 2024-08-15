@@ -1,4 +1,3 @@
-package Special;
 import java.util.Scanner;  // Importing Scanner class to read input from the user
 
 public class BellNumber {  // Declaring the class BellNumber
@@ -33,6 +32,8 @@ public class BellNumber {  // Declaring the class BellNumber
         
     }
 }
+
+////////////////// OUTPUT //////////////////////
 
 /*
 Dry Run:

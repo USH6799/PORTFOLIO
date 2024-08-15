@@ -1,4 +1,3 @@
-package Special;
 import java.util.Scanner;  // Importing Scanner class to read input from the user
 
 public class LucasNumber {  // Declaring the class LucasNumber
@@ -31,6 +30,9 @@ public class LucasNumber {  // Declaring the class LucasNumber
         
     }
 }
+
+
+/////////////////////////////////////////////////////////////////////////////
 
 /*
 Dry Run:
