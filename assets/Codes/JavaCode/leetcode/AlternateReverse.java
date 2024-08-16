@@ -50,18 +50,22 @@ public class AlternateReverse {
             // Check for space to identify the end of a word
             if (str.charAt(i) == ' ') {
 
+                String word = str.substring(0, i);
+                String remain = str.substring(i + 1);
+
                 if (odd) {
                     // Reverse the word and add to the result if odd
-                    res += Rev(str.substring(0, i)) + " ";
+                    res += Rev(word) + " ";
                     // Update the string by removing the processed word
-                    str = str.substring(i + 1);
+                    str = remain;
+                    
                     // Set odd to false for the next word
                     odd = false;
                 } else {
                     // Skip reversing and just update the string
-                    res += str.substring(0, i) + " ";
+                    res += word + " ";
                     // Update the string by removing the processed word
-                    str = str.substring(i + 1);
+                    str = remain;
                     // Set odd to true for the next word
                     odd = true;
                 }
